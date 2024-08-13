@@ -42,3 +42,6 @@ include hardware/google/pixel/touch/device.mk
 
 # UDFPS
 TARGET_HAS_UDFPS := true
+
+# ViperFX
+$(call inherit-product-if-exists, packages/apps/ViPER4AndroidFX/config.mk)
