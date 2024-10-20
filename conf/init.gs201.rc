@@ -9,6 +9,8 @@ on early-init && property:ro.build.type=eng
 
 on early-init
     mount_all /vendor/etc/fstab.persist --early
+    write /proc/sys/kernel/sched_pelt_multiplier 1
+    write /sys/kernel/mm/lru_gen/enabled 7
 
 on init
     # CPU0 cannot be offline
