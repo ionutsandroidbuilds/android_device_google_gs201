@@ -1,6 +1,9 @@
 # ConnectivityThermalPowerManager
 BOARD_SEPOLICY_DIRS += hardware/google/pixel-sepolicy/connectivity_thermal_power_manager
 
+# wifi_ext service
+BOARD_SEPOLICY_DIRS += hardware/google/pixel-sepolicy/wifi_ext
+
 # twoshay
 BOARD_SEPOLICY_DIRS += hardware/google/pixel-sepolicy/input
 
