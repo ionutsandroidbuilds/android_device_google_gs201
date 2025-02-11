@@ -25,6 +25,11 @@ TARGET_BUILD_DEVICE_AS_WEBCAM := true
 # Google Assistant
 PRODUCT_PRODUCT_PROPERTIES += ro.opa.eligible_device=true
 
+# Google Camera
+$(call inherit-product-if-exists, vendor/google/camera/camera.mk)
+TARGET_IS_PIXEL_7_SERIES := true
+PRODUCT_BROKEN_VERIFY_USES_LIBRARIES := true
+
 # Google Face Unlock
 $(call inherit-product-if-exists, vendor/google/faceunlock/config.mk)
 
